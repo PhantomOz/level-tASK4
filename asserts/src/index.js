@@ -18,10 +18,10 @@ let bodyColor = window.getComputedStyle(body, null).getPropertyValue("background
 console.log(bodyColor)
 document.getElementById("blue").addEventListener("click", function(){
     if (bodyColor === "rgb(0, 0, 0, 0)") {
-        document.getElementById("blue").toggle("color-act")
+        document.getElementById("blue").setAttribute("class", "color blue color-act");
     } else{
-        body.style.backgroundColor = "rgb(0, 0, 0, 0)";
-        document.getElementById("blue").toggle("color-act")
+        body.style.backgroundColor = "#05BCDC";
+        document.getElementById("blue").setAttribute("class", "color blue color-act");
     }
 })
 document.getElementById("pinkish").addEventListener("click", function(){
@@ -37,16 +37,14 @@ document.getElementById("yellowish").addEventListener("click", function(){
         document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
     } else{
         body.style.background = "#FBEC06";
-        body.style.color ="#ffffff"
         document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
     }
 })
-document.getElementById("yellowish").addEventListener("click", function(){
-    if (bodyColor === "#FBEC06") {
-        document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
+document.getElementById("white").addEventListener("click", function(){
+    if (bodyColor === "#ffffff") {
+        document.getElementById("white").setAttribute("class", "color white color-act");
     } else{
-        body.style.background = "#FBEC06";
-        body.style.color ="#ffffff"
-        document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
+        body.style.background = "#ffffff";
+        document.getElementById("white").setAttribute("class", "color white color-acted");
     }
 })

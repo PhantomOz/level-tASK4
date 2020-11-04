@@ -5,6 +5,7 @@ body{
     background: linear-gradient(90deg, rgb(4, 125, 175) 0%, 22.1683%, rgb(32, 152, 190) 44.3366%, 72.1683%, rgb(16, 143, 187) 100%);
     overflow: hidden;
     height: 100%;
+    color: #B4DCE4;
     font-family: 'Montserrat', sans-serif;
 }
 .side-bar{
@@ -60,12 +61,12 @@ a{
 }
 .nav-links{
     display: inline-block;
-    width: 49%;
+    width: 47%;
     margin: 0;
 }
 .cart{
     display: inline-block;
-    width: 49%;
+    width: 47%;
     text-align: right;
     color: #B4D6E4;
     margin: 0;
@@ -202,6 +203,10 @@ select{
 .color-act{
     border: 2px solid white;
 }
+.color-acted{
+    border: 2px solid black;
+}
+
 /************************************************************ mobile responsive **************************************/
 @media only screen and (max-width: 1793px){
     .sqs, .sqd{
