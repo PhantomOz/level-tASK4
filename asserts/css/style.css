@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    background: linear-gradient(90deg, rgb(4, 125, 175) 0%, 22.1683%, rgb(32, 152, 190) 44.3366%, 72.1683%, rgb(16, 143, 187) 100%);
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.side-bar{
+    margin: 0;
+    background-color: #B4DCE4;
+    width: 6%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.side-bar-links{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.side-bar-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F24BC6;
+    margin: 40px auto;
+    text-align: center;
+}
+.fa-sync-alt{
+    font-size: 25px;
+    margin: 12px auto;
+    color: #ffffff;
+}
+.side-bar-links a{
+    width: 100%;
+    color: #6CB3CE;
+    text-align: center;
+}
+.body{
+    margin-left: 6%;
+    padding: 20px;
+}
+/******************************************************* navbar **************************************************/
+.collapsible{
+    visibility: hidden;
+}
+.nav-bar{
+    padding: 20px;
+}
+.nav-bar a{
+    color: #B4D6E4;
+    margin: 10px;
+    padding: 10px;
+}
+.nav-links{
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+}
+.cart{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    color: #B4D6E4;
+    margin: 0;
+    padding: 10px;
+}
+/****************************************************** SQS *******************************************************/
+.products{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.sqs, .sqd{
+    
+    padding: 20px 40px;
+    display: inline-block;
+    width: 45%;
+    height: inherit;
+    vertical-align: middle;
+    color: #B4D6E4;
+}
+.img{
+    
+    /* The image used */
+    background-image: url("../img/speedyquads.png");
+
+    /* Full height */
+    height: 1000px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
+
+}
+.speedy{
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 500;
+    margin: -440px 230px 0;
+    color: #C3DFEB;
+}
+.s, .q{
+    letter-spacing: 0.6px;
+}
+.s{
+    margin-bottom: -50px;
+}
+.q{
+    margin-left: 60px;
+}
+/************************************************************ text ***************************/
+.name{
+    font-family: 'Raleway';
+    font-weight: 300;
+    display: inline-block;
+}
+.rating{
+    margin-left: 20px;
+    font-size: 25px;
+    border-color: #ffffff;
+    color:#FBEC06;
+}
+.sub{
+    font-size: 10px;
+    font-weight: 200;
+}
+.pricing{
+    font-weight: 700;
+}
+.description{
+    padding-right: 40%;
+    font-size: 15px;
+}
+h5{
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+/************************************ End-Text ***************************************************/
+/************************************ color-group **************************************/
+.color-group{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+.ch{
+    margin-right: 10px;
+}
+.color{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5px;
+}
+.blue{
+    background-color: #05BCDC;
+}
+.pinkish{
+    background-color: #F24BC6;
+}
+.yellowish{
+    background-color: #FBEC06;
+}
+.white{
+    background-color: #ffffff;
+}
+.select-group{
+    margin: 20px auto;
+}
+.select-head{
+    margin-right: 10px;
+}
+select{
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    color: #B4D6E4;
+    font-family: 'Montserrat';
+    border-color: #B4D6E4;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #F24BC6;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.color-act{
+    border: 2px solid white;
+}
+/************************************************************ mobile responsive **************************************/
+@media only screen and (max-width: 1793px){
+    .sqs, .sqd{
+    
+        padding: 20px 40px;
+        display: inline-block;
+        width: 40%;
+        height: inherit;
+        vertical-align: middle;
+        color: #B4D6E4;
+    }
+    .description{
+        padding-right: 20%;
+        font-size: 15px;
+    }
+    .img{
+    
+        /* The image used */
+        background-image: url("../img/speedyquads.png");
+        width: 100%;
+    
+        /* Full height */
+        height: 800px;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: text-bottom;
+    
+    }
+    .speedy{
+        font-family: 'Raleway';
+        font-size: 50px;
+        font-weight: 500;
+        margin: -370px 20px 0;
+        color: #C3DFEB;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .products{
+        width: 100%;
+        height: 100%;
+    }
+    .sqs, .sqd{
+        display: block;
+        width: 100%;
+        height: inherit;
+        color: #B4D6E4;
+    }
+    .body{
+        margin-left: 6%;
+        padding: 20px;
+    }
+    .nav-bar{
+        padding: 0;
+    }
+    .nav-bar a{
+        color: #B4D6E4;
+        margin: 0;
+        padding: 10px;
+    }
+    .nav-links{
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+    }
+    .cart{
+        display: inline-block;
+        width: 40%;
+        text-align: right;
+        color: #B4D6E4;
+        margin: 0;
+        padding: 10px;
+    }
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        visibility: visible;
+        background-color: transparent;
+        color: #B4D6E4;
+        cursor: pointer;
+        padding: 18px;
+        width: 40%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        display: inline-block;
+        font-family: 'Raleway';
+        font-weight: 400;
+        
+    }
+  
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .collapsible:hover {
+        background-color: transparent;
+        color: #B4D6E4;
+        font-family: 'Raleway';
+        font-weight: 700;
+        
+    }
+  
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        position: absolute;
+        z-index: 1;
+        transition: max-height 0.5s ease-out;
+        width: 200px;
+
+    }
+    .collapsible:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: white;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+      }
+      .img{
+    
+        /* The image used */
+        background-image: url("../img/speedyquads.png");
+    
+        /* Full height */
+        height: 400px;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: text-bottom;
+    
+    }
+    .speedy{
+        font-family: 'Raleway';
+        font-size: 30px;
+        font-weight: 500;
+        margin: -190px 13% 0;
+        color: #C3DFEB;
+    }
+    .s{
+        margin-bottom: -40px;
+    }
+    .name{
+        font-family: 'Raleway';
+        font-size: 15px;
+        font-weight: 300;
+        display: inline-block;
+    }
+    .rating{
+        margin-left: 20px;
+        font-size: 15px;
+        border-color: #ffffff;
+        color:#FBEC06;
+    }
+    .sub{
+        font-size: 8px;
+        font-weight: 200;
+    }
+    .pricing{
+        font-weight: 700;
+    }
+    .description{
+        padding-right: 10%;
+        font-size: 10px;
+    }
+    h5{
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+    .color-group{
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .ch{
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    .color{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .select-group{
+        margin: 20px auto;
+    }
+    .select-head{
+        margin-right: 10px;
+        font-size: 10px;
+    }
+    select{
+        width: 150px;
+        height: 20px;
+        background-color: transparent;
+        color: #B4D6E4;
+        font-family: 'Montserrat';
+        border-color: #B4D6E4;
+    }
+    .btn{
+        padding: 5px 10px;
+        margin: 10px auto;
+        background-color: #F24BC6;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
