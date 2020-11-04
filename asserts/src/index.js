@@ -15,13 +15,20 @@ for (i = 0; i < coll.length; i++) {
 }
 const body = document.querySelector("body")
 let bodyColor = window.getComputedStyle(body, null).getPropertyValue("background-color");
-console.log(bodyColor)
+
+document.getElementById("blue").setAttribute("class", "color blue color-act");
+
 document.getElementById("blue").addEventListener("click", function(){
     if (bodyColor === "rgb(0, 0, 0, 0)") {
         document.getElementById("blue").setAttribute("class", "color blue color-act");
     } else{
         body.style.backgroundColor = "#05BCDC";
         document.getElementById("blue").setAttribute("class", "color blue color-act");
+        document.getElementById("pinkish").setAttribute("class", "color pinkish");
+        document.getElementById("yellowish").setAttribute("class", "color yellowish");
+        document.getElementById("white").setAttribute("class", "color white");
+        document.getElementById("sqd").setAttribute("class", "sqd");
+
     }
 })
 document.getElementById("pinkish").addEventListener("click", function(){
@@ -30,6 +37,10 @@ document.getElementById("pinkish").addEventListener("click", function(){
     } else{
         body.style.background = "#F24BC6";
         document.getElementById("pinkish").setAttribute("class", "color pinkish color-act");
+        document.getElementById("blue").setAttribute("class", "color blue");
+        document.getElementById("yellowish").setAttribute("class", "color yellowish");
+        document.getElementById("white").setAttribute("class", "color white");
+        document.getElementById("sqd").setAttribute("class", "sqd");
     }
 })
 document.getElementById("yellowish").addEventListener("click", function(){
@@ -37,7 +48,12 @@ document.getElementById("yellowish").addEventListener("click", function(){
         document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
     } else{
         body.style.background = "#FBEC06";
+        body.style.color = "#ffffff"
         document.getElementById("yellowish").setAttribute("class", "color yellowish color-act");
+        document.getElementById("white").setAttribute("class", "color white");
+        document.getElementById("blue").setAttribute("class", "color blue");
+        document.getElementById("pinkish").setAttribute("class", "color pinkish");
+        document.getElementById("sqd").setAttribute("class", "sqd try");
     }
 })
 document.getElementById("white").addEventListener("click", function(){
@@ -45,6 +61,11 @@ document.getElementById("white").addEventListener("click", function(){
         document.getElementById("white").setAttribute("class", "color white color-act");
     } else{
         body.style.background = "#ffffff";
+        document.getElementById("sqd").setAttribute("class", "sqd");
         document.getElementById("white").setAttribute("class", "color white color-acted");
+        document.getElementById("blue").setAttribute("class", "color blue");
+        document.getElementById("pinkish").setAttribute("class", "color pinkish");
+        document.getElementById("yellowish").setAttribute("class", "color yellowish");
+
     }
 })
