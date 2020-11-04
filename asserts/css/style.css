@@ -388,7 +388,7 @@ select{
     .color-group{
         display: flex;
         align-items: center;
-        margin: 20px auto;
+        margin: 10px auto;
     }
     .ch{
         margin-right: 10px;
@@ -402,7 +402,7 @@ select{
         margin: 5px;
     }
     .select-group{
-        margin: 20px auto;
+        margin: 10px auto;
     }
     .select-head{
         margin-right: 10px;
@@ -426,5 +426,17 @@ select{
         font-family: 'Montserrat';
         font-size: 12px;
         font-weight: 600;
+    }
+    .side-bar{
+        margin: 0;
+        background-color: #B4DCE4;
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+    }
+    .body{
+        margin-left: 70px;
+        padding: 20px;
     }
 }
